@@ -85,6 +85,7 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
     public Mat onCameraFrame(CameraBridgeViewBase.CvCameraViewFrame inputFrame) {
         imgRgba = inputFrame.rgba();
 
+
         //Aplicando método para tornar imagem cinza.
         Imgproc.cvtColor(imgRgba,imgGray,Imgproc.COLOR_RGB2GRAY);
 
